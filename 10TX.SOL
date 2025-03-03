@@ -1,0 +1,52 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MultiTx {
+    address public owner;
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    event TransactionExecuted(string txName, address sender);
+
+    function tx1() public {
+        emit TransactionExecuted("tx1", msg.sender);
+    }
+
+    function tx2() public {
+        emit TransactionExecuted("tx2", msg.sender);
+    }
+
+    function tx3() public {
+        emit TransactionExecuted("tx3", msg.sender);
+    }
+
+    function tx4() public {
+        emit TransactionExecuted("tx4", msg.sender);
+    }
+
+    function tx5() public {
+        emit TransactionExecuted("tx5", msg.sender);
+    }
+
+    function tx6() public {
+        emit TransactionExecuted("tx6", msg.sender);
+    }
+
+    function tx7() public {
+        emit TransactionExecuted("tx7", msg.sender);
+    }
+
+    function tx8() public {
+        emit TransactionExecuted("tx8", msg.sender);
+    }
+
+    function tx9() public {
+        emit TransactionExecuted("tx9", msg.sender);
+    }
+
+    function tx10() public {
+        emit TransactionExecuted("tx10", msg.sender);
+    }
+}
